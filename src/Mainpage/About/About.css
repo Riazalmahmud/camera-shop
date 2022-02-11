@@ -1,0 +1,23 @@
+.about-us {
+  text-align: left;
+}
+.about-us h4 {
+  color: #85c226;
+  font-weight: bold;
+}
+.about-us h1 {
+  font-weight: bold;
+}
+.about-us h1 span {
+  color: #85c226;
+}
+.about-us a {
+  text-decoration: none;
+  background-color: #85c226;
+  padding: 10px 32px;
+  float: left;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+}
