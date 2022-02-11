@@ -1,0 +1,7 @@
+.product a {
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 15px;
+  background-color: #85c226;
+  color: aliceblue;
+}

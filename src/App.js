@@ -6,6 +6,7 @@ import Home from "./Mainpage/Home/Home.js";
 import Contact from "./Mainpage/Contact/Contact.js";
 import Notfound from "./Mainpage/Notfound/Notfound.js";
 import Navigation from "./Sharepage/Navigation/Navigation.js";
+import Shop from "./Mainpage/Shop/Shop.js";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/shop">
+            <Shop />
           </Route>
           <Route exact path="/">
             <Home />

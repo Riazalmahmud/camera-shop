@@ -1,3 +1,17 @@
 .choose-plan {
   background-color: #85c226;
 }
+.choose-plan p span {
+  color: red;
+  margin-right: 12px;
+  font-size: 22px;
+}
+.choose-design a {
+  background-color: #85c226;
+  padding: 7px 15px;
+  text-decoration: none;
+  margin-left: -52px;
+}
+.full-security {
+  margin-left: 47px;
+}
