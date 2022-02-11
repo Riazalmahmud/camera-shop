@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import sliderImg from "../../image/sunset-g55a1ce936_1920.jpg";
+import sliderImg from "../../image/sunset-g55a1ce936_19201.jpg";
 import "./Slider.css";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
@@ -9,7 +9,7 @@ const Slider = () => {
     <div>
       <div className="slider">
         <div className="slider-img">
-          <img src={sliderImg} alt="" clssName="img-fluid" />
+          <img src={sliderImg} alt="" className="img-fluid" />
         </div>
 
         <div className="content ">
@@ -27,11 +27,7 @@ const Slider = () => {
             </p>
             <Link clssName="order-design " to="/Shop">
               Order now{" "}
-              <BsArrowRightCircleFill
-                size={"40px"}
-                color={"#85C226"}
-                marginLeft={"10px"}
-              />
+              <BsArrowRightCircleFill size={"40px"} color={"#85C226"} />
             </Link>
           </div>
         </div>
