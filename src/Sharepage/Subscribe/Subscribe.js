@@ -25,9 +25,7 @@ const Subscribe = () => {
             <div className="col-lg-6 col-md-6 col-12">
               <Form className="py-3">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label className="fw-bold sub-text">
-                    Email address
-                  </Form.Label>
+                  <h4 className="fw-bold text-white">Email address</h4>
                   <Form.Control
                     type="email"
                     placeholder="Enter email"

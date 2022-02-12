@@ -7,6 +7,7 @@ import Contact from "./Mainpage/Contact/Contact.js";
 import Notfound from "./Mainpage/Notfound/Notfound.js";
 import Navigation from "./Sharepage/Navigation/Navigation.js";
 import Shop from "./Mainpage/Shop/Shop.js";
+import Footer from "./Mainpage/Footer/Footer.js";
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
             <Notfound />
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
