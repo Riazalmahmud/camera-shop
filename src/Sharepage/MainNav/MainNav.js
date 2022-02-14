@@ -4,7 +4,9 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import brand from "../../image/brand/logo.png";
 import { Link } from "react-router-dom";
 import "./MainNav.css";
+import useAuth from "../../Hooks/useAuth.js";
 const MainNav = () => {
+  const { user } = useAuth();
   return (
     <div>
       <>
@@ -26,6 +28,15 @@ const MainNav = () => {
               <Nav.Link as={Link} to="/contact">
                 contact
               </Nav.Link>
+              {user?.email ? (
+                <Nav.Link as={Link} to="/Deshboard">
+                  Deshboard
+                </Nav.Link>
+              ) : (
+                <Nav.Link as={Link} to="/Register">
+                  Register
+                </Nav.Link>
+              )}
             </Nav>
           </Container>
         </Navbar>

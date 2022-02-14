@@ -22,6 +22,7 @@ import { GoLocation } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 import MainNav from "../MainNav/MainNav.js";
+import useAuth from "../../Hooks/useAuth.js";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
@@ -65,6 +66,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const Navigation = () => {
+  const { user, logOut } = useAuth();
+  console.log(user);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -200,12 +203,32 @@ const Navigation = () => {
                 onClick={handleProfileMenuOpen}
                 color="inherit"
               >
-                <AccountCircle />
+                {user?.email ? (
+                  <img
+                    src={user.photoURL}
+                    alt=""
+                    className="rounded-circle img-fluid"
+                    width={"50px"}
+                    height={"50"}
+                  />
+                ) : (
+                  <AccountCircle />
+                )}
               </IconButton>
               <IconButton>
-                <NavLink className="header" to="/login">
-                  Login
-                </NavLink>
+                {user?.email ? (
+                  <button
+                    type="button"
+                    className="btn btn-danger"
+                    onClick={logOut}
+                  >
+                    LogOut
+                  </button>
+                ) : (
+                  <NavLink className="header" to="/login">
+                    Login
+                  </NavLink>
+                )}
               </IconButton>
 
               <IconButton
