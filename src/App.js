@@ -10,6 +10,8 @@ import Footer from "./Mainpage/Footer/Footer.js";
 import Login from "./Sharepage/Login/Login.js";
 import Register from "./Sharepage/Register/Register.js";
 import AuthProvider from "./context/AuthProvider/AuthProvider.js";
+import AddProduct from "./Sharepage/AddProduct/AddProduct.js";
+import Feedback from "./Sharepage/Feedback/Feedback.js";
 function App() {
   return (
     <div className="App">
@@ -28,6 +30,12 @@ function App() {
             </Route>
             <Route path="/shop">
               <Shop />
+            </Route>
+            <Route path="/AddProduct">
+              <AddProduct />
+            </Route>
+            <Route path="/Feedback">
+              <Feedback />
             </Route>
             <Route path="/login">
               <Login />

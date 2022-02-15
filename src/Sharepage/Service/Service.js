@@ -4,7 +4,7 @@ import Services from "../Services/Services.js";
 const Service = () => {
   const [camService, setCamService] = useState([]);
   useEffect(() => {
-    fetch("./Products.json")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setCamService(data));
   }, []);
@@ -19,7 +19,7 @@ const Service = () => {
         </p>
 
         <Row xs={1} md={3} className="g-4">
-          {camService.map((cameraService) => (
+          {camService.slice(0, 6).map((cameraService) => (
             <Services
               key={cameraService.id}
               cameraService={cameraService}

@@ -10,10 +10,10 @@ const Services = ({ cameraService }) => {
         <Card>
           <Card.Img variant="top" src={image} className="img-fluid" />
           <Card.Body>
-            <Card.Title className="fw-bold">{title}</Card.Title>
+            <Card.Title className="fw-bold">{title.slice(0, 40)}</Card.Title>
             <Card.Text className="fw-bold">
               {" "}
-              {description.slice(0, 70)}
+              {description.slice(0, 130)}
             </Card.Text>
           </Card.Body>
         </Card>

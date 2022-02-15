@@ -11,8 +11,8 @@ const Product = ({ cctvProducts }) => {
         <Card>
           <Card.Img variant="top" src={image} />
           <Card.Body className="product">
-            <Card.Title>{title} </Card.Title>
-            <Card.Text>{description.slice(0, 70)}</Card.Text>
+            <Card.Title>{title.slice(0, 40)} </Card.Title>
+            <Card.Text>{description.slice(0, 130)}</Card.Text>
             <h4 className="fw-bold fast-color">$ {price}</h4>
             <Link clssName="get-now rounded " to="/details">
               Add to cart <AiTwotoneShopping size={"25px"} color={"#fff"} />
